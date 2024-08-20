@@ -128,3 +128,17 @@ console.log(friends);
 const firstName = "Alex";
 const alex = [firstName, "Ange", 2024 - 1999, "student", friends];
 console.log(alex);
+console.log(alex.length);
+
+//Exercise
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+const y = [1990, 1967, 2002, 2010, 2018];
+// we cannot do operations with arrays
+const age1 = calcAge(y[0]);
+const age2 = calcAge(y[1]);
+const age3 = calcAge(y[y.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(y[0]), calcAge(y[1]), calcAge(y[y.length - 1])];
