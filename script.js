@@ -106,3 +106,21 @@
 // scoreKoalas = calcAverage(23, 34, 27);
 // console.log(scoreDolphins, scoreKoalas);
 // checkWinner(scoreDolphins, scoreKoalas);
+
+//ARRAYS
+const friend1 = "Michael";
+const friend2 = "Steven";
+const friend3 = "Peter";
+//1st way - more usual (literal syntax)
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+// 2nd way
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
