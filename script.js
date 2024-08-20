@@ -142,3 +142,4 @@ const age3 = calcAge(y[y.length - 1]);
 console.log(age1, age2, age3);
 
 const ages = [calcAge(y[0]), calcAge(y[1]), calcAge(y[y.length - 1])];
+console.log(ages);
