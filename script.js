@@ -166,6 +166,6 @@ console.log(friends.includes("Steven")); // returns true
 console.log(friends.includes("Bob")); // returns false
 console.log(friends.includes(23)); //  returns true
 
-if (friends.includes("Peter")) {
-  console.log("You have a friend Peter");
+if (friends.includes("Steven")) {
+  console.log("You have a friend Steven");
 }
