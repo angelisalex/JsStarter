@@ -108,38 +108,64 @@
 // checkWinner(scoreDolphins, scoreKoalas);
 
 //ARRAYS
-const friend1 = "Michael";
-const friend2 = "Steven";
-const friend3 = "Peter";
-//1st way - more usual (literal syntax)
-const friends = ["Michael", "Steven", "Peter"];
-console.log(friends);
+// const friend1 = "Michael";
+// const friend2 = "Steven";
+// const friend3 = "Peter";
+// //1st way - more usual (literal syntax)
+// const friends = ["Michael", "Steven", "Peter"];
+// console.log(friends);
 // 2nd way
-const years = new Array(1991, 1984, 2008, 2020);
+// const years = new Array(1991, 1984, 2008, 2020);
 
-console.log(friends[0]);
-console.log(friends[2]);
-console.log(friends.length);
-console.log(friends[friends.length - 1]);
+// console.log(friends[0]);
+// console.log(friends[2]);
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
 
-friends[2] = "Jay";
+// friends[2] = "Jay";
+// console.log(friends);
+
+// const firstName = "Alex";
+// const alex = [firstName, "Ange", 2024 - 1999, "student", friends];
+// console.log(alex);
+// console.log(alex.length);
+
+// //Exercise
+// const calcAge = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+// const y = [1990, 1967, 2002, 2010, 2018];
+// // we cannot do operations with arrays
+// const age1 = calcAge(y[0]);
+// const age2 = calcAge(y[1]);
+// const age3 = calcAge(y[y.length - 1]);
+// console.log(age1, age2, age3);
+
+// const ages = [calcAge(y[0]), calcAge(y[1]), calcAge(y[y.length - 1])];
+// console.log(ages);
+
+//ADD ELEMENTS
+const friends = ["Michael", "Steven", "Peter"];
+const newLength = friends.push("Jay"); //adds Jay
+console.log(newLength);
+
+friends.unshift("John"); // adds John in the beginning
+
+//REMOVE ELEMENTS
+friends.pop();
+const popped = friends.pop(); // Last ELEMENT IS REMOVED
+console.timeLog(popped); // Peter will be returned becuase it is the last one
+
+friends.shift(); //First
 console.log(friends);
 
-const firstName = "Alex";
-const alex = [firstName, "Ange", 2024 - 1999, "student", friends];
-console.log(alex);
-console.log(alex.length);
+console.log(friends.indexOf("Steven")); // returns the index of the element
 
-//Exercise
-const calcAge = function (birthYear) {
-  return 2037 - birthYear;
-};
-const y = [1990, 1967, 2002, 2010, 2018];
-// we cannot do operations with arrays
-const age1 = calcAge(y[0]);
-const age2 = calcAge(y[1]);
-const age3 = calcAge(y[y.length - 1]);
-console.log(age1, age2, age3);
+friends.push(23);
+console.log(friends.includes("Steven")); // returns true
+console.log(friends.includes("Bob")); // returns false
+console.log(friends.includes(23)); //  returns true
 
-const ages = [calcAge(y[0]), calcAge(y[1]), calcAge(y[y.length - 1])];
-console.log(ages);
+if (friends.includes("Peter")) {
+  console.log("You have a friend Peter");
+}
